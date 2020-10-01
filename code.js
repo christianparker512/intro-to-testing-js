@@ -1,25 +1,22 @@
-
-
-function helloWorld(name) {
-    if (name === true || name === false) {
+function helloWorld(name){
+    if (typeof name == "boolean" || typeof name !== false) {
         return "Hello, World!";
     }
-    return `Hello, " + name;
+    return 'Hello' + name;
 }
-
-fun
 function isFive(num) {
     return num == 5;
 }
+
 function isEven(num) {
     return num % 2 == 0;
 }
 
 function isVowel(char) {
-    var vowels = "aeiouAEIOU";
-    if (char === "") {
+    vowels = "aeiouAEIOU";
+    if (char === ""){
         return false;
     }
-    return vowels.includes(char);
+    return vowels.include(char);
 }
-// console.log(isVowel(""));
+console.log(isVowel(""));
